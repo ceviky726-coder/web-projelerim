@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Atölyesi</title>
+    <link rel="stylesheet" href="uygulama_style.css">
+</head>
+<body>
+    <header>
+        <h1>Css Atölyesi</h1>
+        <p>Seçiciler ve görünüm özellikleriyle küçük bir deneme alanı.</p>
+    </header>
+    <nav>
+        <a href="#duyuru">Duyuru</a>
+        <a href="#kartlar">Kartlar</a>
+        <a href="#ornekler">Display örnekleri</a>
+    </nav>
+    <main>
+        <section id="duyuru" class="duyuru">
+            <h2>Haftanın duyurusu</h2>
+            <p>Bu alanda Css seçicilerini ve görünürlük özelliklerini deniyoruz</p>
+            <p class="etiket">Yeni içerik</p>
+        </section>
+        <section id="kartlar">
+            <h2>Blog yazıları</h2>
+            <article class="kart">
+                <h3>Html tekrar</h3>
+                <p>Html sayfanın yapısını oluşturur.</p>
+                <a href="#">Örneğe git</a>
+            </article>
+            <article class="kart">
+                <h3>Css e giriş</h3>
+                <p>Css sayfanın görünümünü düzenlememizi sağlar.</p>
+                <a href="#">Örneğe git</a>
+            </article>
+            <article class="kart gizli-ornek">
+                <h3>display:none</h3>
+                <p>Bu kart sayfada yer kaplamaz</p>
+                <a href="#">Örneğe git</a>
+            </article>
+            <article class="kart gorunmez-ornek">
+                <h3>visibility:hidden</h3>
+                <p>Bu kart görünmez fakat kapladığı alan korunur.</p>
+                <a href="#">Örneğe git</a>
+            </article>
+        </section>
+        <section id="ornekler">
+            <h2>Display örnekleri</h2>
+            <p>Aşağıdaki bağlantılar normalde satır içi ögelerdir.</p>
+            <a class="ornek-inline" href="#">Inline bağlantı</a>
+            <a class="ornek-inline-block" href="#">Inline-block bağlantı</a>
+            <p class="not">
+                Not: inline-block örneğinde genişlik yükseklik ve iç boşluk verilebilir.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Css Atölyesi-ders uygulaması</p>
+    </footer>
+</body>
+</html>

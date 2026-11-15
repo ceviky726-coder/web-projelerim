@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemen Üye Ol!</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Ana Sayfa</a> |
+        <a href="en-iyi-filmler.html">En İyi Filmler</a> |
+        <a href="kayit-ol.html">Kayıt Ol</a>
+    </nav>
+    <hr>
+    <h1>Lütfen formu eksiksiz doldurunuz.</h1>
+    <hr>
+    <form action="index.html">
+        <h2>Hesap Bilgileriniz</h2>
+        <table>
+            <tr>
+                <td width="120px"><label for="username">Kullanıcı adı:</label></td>
+                <td><input type="text" id="username" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="e-posta">E-posta:</label></td>
+                <td><input type="email" id="e-posta" name="e-posta" required></td>
+            </tr>
+            <tr>
+                <td><label for="parola">Parola:</label></td>
+                <td><input type="password" id="parola" name="parola" required></td>
+            </tr>
+        </table>
+        <h2>Kişisel Bilgileriniz</h2>
+        <table>
+            <tr>
+                <td width="120px"><label for="name">Adınız:</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="surname">Soyadınız:</label></td>
+                <td><input type="text" id="surname" name="surname"></td>
+            </tr>
+            <tr>
+                <td><label for="sehir">Şehir:</label></td>
+                <td>
+                    <select id="sehir" name="sehir">
+                        <option value="">Seçiniz</option>
+                        <option value="istanbul">İstanbul</option>
+                        <option value="izmir">İzmir</option>
+                        <option value="ankara">Ankara</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Cinsiyet:</label></td>
+                <td>
+                    <input type="radio" id="kadin" name="cinsiyet" value="kadin"><label for="kadin">Kadın</label>
+                    <input type="radio" id="erkek" name="cinsiyet" value="erkek"><label for="erkek">Erkek</label>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">Kaydet</button></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

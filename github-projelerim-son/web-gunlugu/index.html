@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Günlüğü | HTML & CSS</title>
+    <link rel="stylesheet" href="blog_style.css">
+    <style>
+        .announcement {
+            border-left: 5px solid #333;
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            background-color: #f3f3f3;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="site-title">WEB GÜNLÜĞÜ</p>
+            <p class="site-description">HTML, Css ve web tasarım üzerine küçük notlar.</p>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="container nav-content">
+            <a href="#anasayfa">Anasayfa</a>
+            <a href="#yazilar">Yazılar</a>
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#iletisim">İletişim</a>
+        </div>
+    </nav>
+    <main id="anasayfa" class="container">
+        <div class="announcement">
+            <strong>Haftanın konusu:</strong>
+            <span style="color: #b42318;">Css Box model ve seçiciler</span>
+        </div>
+        <div class="layout">
+            <section id="yazilar" class="posts">
+                <article class="post">
+                    <p class="post-category">Html</p>
+                    <h1>Html öğrenmeye nereden başlamalı?</h1>
+                    <p class="post-meta">12 Ekim 2026- 10 dk</p>
+                    <div class="image-html fake-image">Html</div>
+                    <p>Bir web sayfası hazırlarken ilk olarak sayfanın yapısını oluştururuz. Html başlıkları, paragrafları, bağlantıları, listeleri ve diğer içerikleri oluşturma imkanı verir.</p>
+                    <p>Html'i bir binanın iskeleti gibi düşünebiliriz. Sayfanın hangi bölümlerden oluşacağını html ile belirleriz.</p>
+                    <a class="read-more" href="#">Yazının devamını oku--></a>
+                </article>
+                <article class="post">
+                    <p class="post-category">Css</p>
+                    <h2>Css ile sayfalarımızı güzelleştirmek.</h2>
+                    <p class="post-meta">12 Ekim 2026- 12 dk</p>
+                    <div class="image-css fake-image">Css</div>
+                    <p>Html sayfasının yapısını oluşturtan sonra Css kullanarak bu yapının görünümünü değiştirebiliriz. Renkler, yazı boyutu, boşluklar, kenarlıklar Css ile kontrol edilebilir.</p>
+                    <p>Css'in temel mantığını anlamanın en önemli adımlarından biri seçicileri ve kutu modelini öğrenmektir.</p>
+                    <a class="read-more" href="#">Yazının devamını oku--></a>
+                </article>
+            </section>
+            <aside class="sidebar">
+                <section id="hakkimda" class="sidebar-box">
+                    <h2>Hakkımda</h2>
+                    <div class="profile-circle">WP</div>
+                    <p>Merhaba! Bu blogda web geliştirme öğrenirken tuttuğum küçük notları paylaşıyorum.</p>
+                </section>
+                <section class="sidebar-box">
+                    <ul class="category-list">
+                        <li><a href="#">Html<span>(8)</span></a></li>
+                        <li><a href="#">Css <span>(12)</span></a></li>
+                        <li><a href="#">Web tasarım <span>(5)</span></a></li>
+                        <li><a href="#">Uygulamalar <span>(7)</span></a></li>
+                    </ul>
+                </section>
+                <section class="sidebar-box">
+                    <h2>Kategoriler</h2>
+                    <ul class="category-list">
+                        <li><a href="#">Css seçicilerini anlamak</a></li>
+                        <li><a href="#">Box-model nedir</a></li>
+                        <li><a href="#">Html listeleri</a></li>
+                        <li><a href="#">Semantik Html</a></li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+        <section class="content-box">
+            <h2>Bu haftanın çalışma programı</h2>
+            <table>
+                <thead>
+                    <tr><td>Gün</td><td>Konu</td><td>Çalışma</td></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Pazartesi</td><td>Html</td><td>Tekrar</td></tr>
+                    <tr><td>Salı</td><td>Css</td><td>Seçiciler</td></tr>
+                    <tr><td>Çarşamba</td><td>Css</td><td>Box Model</td></tr>
+                </tbody>
+            </table>
+        </section> 
+        <section id="iletisim" class="content-box contact-box">
+            <h2>İletişim</h2>
+            <p>Blog hakkında bir mesaj bırakmak istersen aşağıdaki formu kullanabilirsin.</p>
+            <form action="register.php">
+                <label for="name">Ad Soyad</label>
+                <input type="text" id="name" placeholder="Adınızı yazınız.">
+                <label for="email">E-posta</label>
+                <input type="email" id="email" placeholder="E-posta adresiniz.">
+                <label for="message">Mesaj</label>
+                <textarea id="message" rows="5" placeholder="Mesajınızı yazınız."></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-content"> 
+            <p>2026 Web Günlüğü - Html & Css Uygulaması</p>
+            <a href="index.html">Yukarı çık</a>
+        </div>
+    </footer>
+</body>
+</html>

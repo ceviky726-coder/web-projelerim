@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #fafafa;
+    color: #222;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.7;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1,h2,h3,p {margin-top: 0;}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/* 
+------------------------
+Header
+------------------------
+*/
+
+.site-header {
+    padding: 55px 0px 45px 0px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.site-title {
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.site-description {
+    margin-bottom: 0;
+    color: #777;
+}
+
+/* 
+-----------------------
+Navigation
+----------------------- 
+*/
+
+.main-nav {
+    background-color: #222;
+}
+
+.nav-content {
+    display: flex;
+    gap: 30px;
+    min-height: 55px;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.main-nav a:hover{
+    color: #ddd;
+}
+
+
+.announcement {
+    margin-top: 35px;
+}
+
+/* ---------------------
+Ana düzen
+--------------------- */
+
+.layout {
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.posts {
+    width: 70%;
+}
+
+.sidebar{
+    width: 30%;
+}
+
+/* 
+------------------
+Blog Yazıları
+------------------
+  */
+
+.post{
+    padding-bottom: 45px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-category {
+    margin-bottom: 8px;
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.post h1,h2 {
+    margin-bottom: 8px;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.post-meta {
+    margin-bottom: 25px;
+    color: #888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+/* 
+-------------
+listeler
+------------- */
+
+.category-list {
+    margin: 0;
+    padding-left: 20px;
+
+}
+
+.category-list li {
+    margin-bottom: 8px;
+}
+
+.category-list span {color: #888;}
+
+#hakkimda {
+    border-top-width:5px ;
+}
